@@ -19,7 +19,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='w-5/6 green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+        className='flex-[0.75] green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
         <div
         className="bg-[#102525] rounded-[20px] pt-10 pb-20 px-10 min-h-[80px]"
