@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 16
       - name: Install Dependencies
-        run: npm install 
+        run: npm install --save --legacy-peer-deps  react-tilt
