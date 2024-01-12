@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import designer from "./designer.png";
 import react from "./react.png";
+import express from "./express.png"
 import website from "./website.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -19,14 +20,22 @@ import redux from "./tech/redux.png";
 import boot from "./tech/boot.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import net from "./tech/.net.png";
+import expresso from "./tech/express.webp";
+import mongo from "./tech/mongo.png";
+import next from "./tech/next.png";
+import tailwind from "./tech/tailwind.png";
 
 import edsoft from "./company/edsoft.png";
 import dosan from "./company/dosan.png";
 import apolonia from "./company/apolonia.png";
+import landian from "./company/landian.png";
+import landianLogo from "./landianLogo.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import socialHub from "./socialHub.png"
 
 import gmail from "./gmail.png"
 import link from "./link.png"
@@ -60,4 +69,13 @@ export {
   tripguide,
   gmail,
   link,
+  express,
+  landian,
+  net,
+  expresso,
+  mongo,
+  next,
+  tailwind,
+  socialHub,
+  landianLogo
 };

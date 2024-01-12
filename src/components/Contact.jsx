@@ -26,7 +26,7 @@ const Contact = () => {
         >
           
         <p className='sm:text-[18px] text-[#4fe9e9] uppercase tracking-wider no-underline hover:underline" href={e.content}>{e.content}</a> : <h5 className="sm:text-[18px] text-secondary uppercase tracking-wider'>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact. 🤝</h3>
 
         <div className="mt-5 flex flex-col justify-center gap-20">
           {

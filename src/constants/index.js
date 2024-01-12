@@ -23,7 +23,16 @@ import {
   graph,
   gmail,
   link,
-  github
+  github,
+  express,
+  landian,
+  net,
+  expresso,
+  mongo,
+  next,
+  tailwind,
+  socialHub,
+  landianLogo
 } from "../assets";
 
 const contacMe = [
@@ -42,8 +51,8 @@ const contacMe = [
   {
     name: "git",
     red: github,
-    content: "said-08",
-    link: false,
+    content: "https://github.com/said-08",
+    link: true,
   },
 ]
 
@@ -68,13 +77,13 @@ const services = [
     icon: website,
   },
   {
-    title: "React.js Developer",
+    title: "Frontend Developer",
     icon: react,
   },
-  // {
-  //   title: "React.js Developer",
-  //   icon: backend,
-  // },
+  {
+    title: "Backend Developer",
+    icon: express,
+  },
   {
     title: "Good Designer",
     icon: designer,
@@ -82,14 +91,6 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -103,6 +104,18 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "Next JS",
+    icon: next,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -111,12 +124,28 @@ const technologies = [
     icon: boot,
   },
   {
+    name: "Tailwind",
+    icon: tailwind,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
   },
   {
+    name: "Express JS",
+    icon: expresso,
+  },
+  {
+    name: ".Net",
+    icon: net,
+  },
+  {
     name: "MySQL",
     icon: mysql,
+  },
+  {
+    name: "MongoDB",
+    icon: mongo,
   },
   {
     name: "Three JS",
@@ -138,16 +167,29 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
+    title: "Next.js Developer",
+    company_name: "Landian",
+    icon: landian,
+    iconBg: "#2c5757",
+    date: "2023",
+    points: [
+      "We developed a web application, which was a social network of a metaverse. We manage to do it with technologies like Next.js, Tailwind, Apollo, Nest.js",
+      "The application managed to have several typical functionalities of a social network, where users could have their communities on specific topics, search for your friends, communicate in any way, achieving a great user experience.",
+      "This was my first business project, where they gave me the confidence to develop the software in the best way. It was a great experience.",
+      "We were able to advance by working with agile methodologies, such as scrum, and using task assignment tools such as Nifty.",
+    ],
+  },
+  {
+    title: "Next.js Developer",
     company_name: "EdSoft",
     icon: edsoft,
     iconBg: "#2c5757",
     date: "Dec 2022 - current",
     points: [
-      "Developing web application using React.js, ApolloClient and Bootstrap on the front-end side. And on the back-end side, We are working with Fastify, GraphQL and Prisma.",
-      "This project seems important to me, because it's the data management platform for schools in Sucre. The idea is to keep growing and reach more people",
+      "Developing a web application using Next.js, ApolloClient and Tailwind on the front-end side. Talking about back-end, We are working with Nest.js, GraphQL and Prisma.",
+      "It's a important project, because it's the data management platform for schools in Sucre, Colombia; like school enrollment, students by group, grades, all types of achievements, class attendance, etc. The idea is to keep growing and reach more schools",
       "Using agile methodologies such as SCRUM that helped us to have a more constant progress.",
-      "In this project I usually work more on the front-end side, however, I like to venture into things that are out of my comfort zone, such as the back-end.",
+      "I have worked in several functions on this project, whether on the front or back. However, there are always things to learn, making the product better.",
     ],
   },
   {
@@ -157,7 +199,7 @@ const experiences = [
     iconBg: "#2c5757",
     date: "May 2022 - Oct 2022",
     points: [
-      "Developing this web applications using React.js and other related technologies like Redux or Bootstrap.",
+      "Developing this web application using React.js and other related technologies like Redux or Bootstrap. This app managed various company data, such as customers, products, all kinds of statistics",
       "Collaborating with a great team, making the App development more pleasant.",
       "Using agile methodologies such as SCRUM that helped us to have a more constant progress.",
       "Implementing responsive design to get a better reach.",
@@ -178,6 +220,27 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Landian",
+    description:
+      "Webapp made for the purpose of relating people as a social network, for a metaverse that the company was creating. Good user experience, making it search for friends, create communities, groups, chat, etc.",
+    tags: [
+      {
+        name: "next",
+        color: "white-text-gradient",
+      },
+      {
+        name: "apollo",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: socialHub,
+    imgLogo: landianLogo,
+  },
   {
     name: "EdSoft",
     description:

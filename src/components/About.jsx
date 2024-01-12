@@ -42,7 +42,7 @@ const About = () => {
       <p className={styles.sectionSubText}
       >Introduction</p>
       <h2 className={styles.heroHeadText}
-      >Overview.</h2>
+      >Overview 👋</h2>
     </motion.div>
 
     <motion.p
@@ -50,9 +50,8 @@ const About = () => {
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     >
       I am a Software Web Developer living in Medellín, 
-      Colombia. Experience working on JS/TS, Node.js, 
-      HTML-CSS, React.js, Redux, GraphQL, Flutter talking 
-      about mobile development. Advanced English skills (B2). 
+      Colombia. Experience working on JS/TS, Node.js with frameworks like Express.js and Nest.js,
+      HTML-CSS, React.js, Next.js, GraphQL, and recently I have used .Net. Advanced English skills (B2). 
       I have always been good at teamwork, I usually get 
       along with people and I've always liked helping. As 
       a rule I have a excellent attitude facing problems 
