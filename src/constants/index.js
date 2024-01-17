@@ -12,7 +12,6 @@ import {
   nodejs,
   mysql,
   git,
-  figma,
   dosan,
   edsoft,
   apolonia,
@@ -116,14 +115,6 @@ const technologies = [
     icon: next,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Bootstrap",
-    icon: boot,
-  },
-  {
     name: "Tailwind",
     icon: tailwind,
   },
@@ -148,16 +139,8 @@ const technologies = [
     icon: mongo,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "GraphQL",
