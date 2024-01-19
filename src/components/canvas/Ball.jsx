@@ -4,51 +4,37 @@ import {
   Decal, Float, OrbitControls, Preload, useTexture 
 } from '@react-three/drei'
 
-import CanvasLoader from '../Loader'
+import {Tilt} from 'react-tilt'
+import { motion } from 'framer-motion'
+import { fadeIn, textVariant } from '../../utils/motion'
 
-const Ball = (props) => {
 
-  const [decal] = useTexture([props.imgUrl])
-  
+const BallCard = ({name, icon, index}) => {
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-    <ambientLight intensity={0.25} />
-    <directionalLight position={[0, 0, 0.05]} />
-    <mesh castShadow receiveShadow scale={2.75}>
-      <icosahedronGeometry args={[1, 1]} />
-      <meshStandardMaterial
-        color='#fff8eb'
-        polygonOffset
-        polygonOffsetFactor={-5}
-        flatShading
-      />
-      <Decal
-        position={[0, 0, 1]}
-        rotation={[2 * Math.PI, 0, 6.25]}
-        scale={1}
-        map={decal}
-        flatShading
-      />
-    </mesh>
-  </Float>
+      <div>
+      <Tilt className='xs:w-[100px] w-full'>
+        <motion.div
+          variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+          className='w-[104px] green-pink-gradient p-[1px] rounded-[50%] shadow-card'
+        >
+          <div
+            options={{
+              max: 45,
+              scale: 1,
+              speed: 450,
+            }}
+            className='bg-[#ffffff] w-[100px] h-[100px] rounded-[50%] py-5 px-5 min-h-[100px] flex justify-evenly items-center flex-col'
+          >
+            <img
+              src={icon}
+              alt='web-development'
+              className='w-36 h-36 object-center'
+            />
+          </div>
+        </motion.div>
+      </Tilt>
+      </div>
   )
 }
 
-const BallCanvas = ({ icon }) => {
-  return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
-      </Suspense>
-
-      <Preload all />
-    </Canvas>
-  );
-}
-
-export default BallCanvas
+export default BallCard

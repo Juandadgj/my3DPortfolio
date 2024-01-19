@@ -21,7 +21,7 @@ import boot from "./tech/boot.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import net from "./tech/.net.png";
-import expresso from "./tech/express.webp";
+import expresso from "./tech/express.png";
 import mongo from "./tech/mongo.png";
 import next from "./tech/next.png";
 import tailwind from "./tech/tailwind.png";
